@@ -1,13 +1,19 @@
+#Python Base
 FROM python
-LABEL maintainer "Kazuki Isogai <i@issokun.work>"
 
+#It's me
+LABEL maintainer "Isogai Kazuki <i@issokun.work>"
+
+#Environment variable
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
-ENV LC_ALL en_US.UTF-8
 
+#Port
 EXPOSE 8000
 
+#Volume
 VOLUME /home/root/workspace
 WORKDIR /home/root/workspace
 
+#Command Line
 ENTRYPOINT ["/bin/bash"]

@@ -1,4 +1,4 @@
-#Python Base
+#Python base
 FROM python
 
 #It's me
@@ -15,5 +15,5 @@ EXPOSE 8000
 VOLUME /home/root/workspace
 WORKDIR /home/root/workspace
 
-#Command Line
+#Command line
 ENTRYPOINT ["/bin/bash"]
